@@ -51,8 +51,10 @@ export default class Card extends Component {
 
     handleMouseMove = (event) => {
         if (this.state.isHeld) {
-            this.setState({ x: event.clientX - this.state.holdX })
-            this.setState({ y: event.clientY - this.state.holdY })
+            this.setState({ 
+                x: event.clientX - this.state.holdX,
+                y: event.clientY - this.state.holdY
+            })
         }
     }
 
